@@ -3,7 +3,7 @@ import axios from "axios";
 const api = axios.create({
   baseURL: "https://backend-p4-klvc.onrender.com/api",
   headers: {
-    "x-nombre": "TU_NOMBRE_AQUI",
+    "x-nombre": "Alvaro García Rincón",
   },
 });
 
