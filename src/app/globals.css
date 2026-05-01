@@ -19,6 +19,7 @@ a {
   min-height: 100vh;
 }
 
+/* NAVBAR */
 .barra {
   position: sticky;
   top: 0;
@@ -32,6 +33,7 @@ a {
   border-bottom: 1px solid #d8e5f4;
   box-shadow: 0 8px 24px rgba(16, 42, 67, 0.06);
 }
+
 .barra h1 {
   margin: 0;
   font-size: 1.05rem;
@@ -44,6 +46,7 @@ a {
   align-items: center;
   gap: 10px;
 }
+
 .botonesbarra button {
   display: flex;
   align-items: center;
@@ -56,9 +59,11 @@ a {
   color: #1e293b;
   transition: 0.2s ease;
 }
+
 .botonesbarra button:hover {
   background-color: #e2eeff;
 }
+
 .botonesbarra button img {
   width: 20px;
   height: 20px;
@@ -78,6 +83,7 @@ a {
   box-shadow: 0 10px 20px rgba(29, 155, 240, 0.25);
 }
 
+/* HOME */
 .home {
   display: flex;
   flex-direction: column;
@@ -153,8 +159,6 @@ a {
   border: none;
   background: #f3f8ff;
   cursor: pointer;
-  padding: 5px 8px;
-  border-radius: 8px;
   padding: 7px 10px;
   border-radius: 999px;
   color: #0f3b66;
@@ -164,6 +168,7 @@ a {
   background-color: #d9ecff;
 }
 
+/* PAGINADOR */
 .paginador {
   display: flex;
   align-items: center;
@@ -195,6 +200,7 @@ a {
   font-size: 14px;
 }
 
+/* AUTH */
 .auth-container {
   height: 100vh;
   display: flex;
@@ -234,8 +240,6 @@ a {
 
 .auth-input:focus {
   border-color: #1da1f2;
-@@ -218,55 +263,55 @@
-  text-align: center;
 }
 
 .auth-switch-btn {
@@ -251,6 +255,7 @@ a {
   text-decoration: underline;
 }
 
+/* COMENTARIOS */
 .comentarios-container {
   display: flex;
   justify-content: center;
@@ -288,11 +293,6 @@ a {
 .comentario-input-box {
   display: flex;
   gap: 10px;
-}
-
-@@ -281,52 +326,53 @@
-  border-color: #1da1f2;
-  outline: none;
 }
 
 .comentario-btn {
@@ -344,10 +344,7 @@ a {
   text-decoration: underline;
 }
 
-@@ -355,26 +401,26 @@
-  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-}
-
+/* PERFIL */
 .perfil-username {
   margin: 0;
   font-size: 20px;
@@ -370,4 +367,4 @@ a {
   display: flex;
   flex-direction: column;
   gap: 15px;
-}
+} 
