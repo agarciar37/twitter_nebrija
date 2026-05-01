@@ -1,3 +1,5 @@
+'use client'
+
 import api from "@/api/axios";
 import { getUnPost, postComentarios } from "@/api/enlaces";
 import { Post } from "@/types";
