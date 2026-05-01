@@ -1,3 +1,5 @@
+'use client'
+
 import { Usuario } from "@/types";
 import { CardHome } from "./CardHome";
 import { useMemo, useState } from "react";
