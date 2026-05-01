@@ -1,36 +1,55 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+Práctica 4 - Clon funcional de Twitter
 
-## Getting Started
+Este proyecto consiste en el desarrollo de un clon funcional de Twitter utilizando Next.js, consumiendo una API REST externa para la gestión de posts, usuarios, likes y retweets.
 
-First, run the development server:
+Instalación y ejecución
 
-```bash
+Sigue estos pasos para ejecutar el proyecto en local:
+
+1. Clonar el repositorio
+git clone <URL_DEL_REPOSITORIO>
+cd twitter_nebrija
+2. Instalar dependencias
+npm install
+3. Arrancar el proyecto
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+El proyecto estará disponible en:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+http://localhost:3000
+Estructura de navegación
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+La aplicación sigue una estructura basada en rutas de Next.js:
 
-## Learn More
+Página principal (/)
+Muestra el feed de posts.
+Incluye:
+Listado paginado de publicaciones.
+Botones de interacción (like y retweet).
+Formulario para crear nuevos posts.
+Cada post es clicable y redirige al detalle.
+Detalle del post (/post/[id])
+Muestra la información completa de un post:
+Contenido
+Usuario
+Interacciones
+Permite ver más contexto del post seleccionado.
+Perfil (/profile)
+Muestra la información del usuario.
+Incluye sus publicaciones.
+Layout global
+Todas las páginas comparten una cabecera común:
+Navegación principal
+Acceso al perfil
+Se utiliza un layout reutilizable para mantener consistencia visual.
+Gestión de datos y API
 
-To learn more about Next.js, take a look at the following resources:
+La aplicación llama a a la API proporcionada:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+https://backend-p4-klvc.onrender.com
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Optimización del rendimiento (SSR / caching).
+Mejor gestión de estado global (Context o Zustand).
+Diseño responsive más avanzado.
