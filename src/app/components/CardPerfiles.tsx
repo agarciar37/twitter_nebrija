@@ -1,3 +1,5 @@
+'use client'
+
 import api from "@/api/axios";
 import { Usuario } from "@/types";
 import { CardHome } from "./CardHome";
