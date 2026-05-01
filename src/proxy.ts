@@ -11,5 +11,5 @@ export const proxy = (request: NextRequest) => {
 };
 
 export const config = {
-  matcher: ["/", "/user/:path*", "/perfiles/:path*", "/post/:path*", "/:id"],
+  matcher: ["/", "/user/:path*", "/perfiles/:path*", "/:id([0-9a-fA-F]{24})"],
 };
